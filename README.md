@@ -1,6 +1,7 @@
 # Agence (2062)
 
-## Projet
+## Projet 
+
 Création du site immobilier intergalactique proposant :
 - 1 page accueil
 - 1 page de recherche location/vente
@@ -11,7 +12,7 @@ Création du site immobilier intergalactique proposant :
 ## Groupe
 Rachel - Raphaël - Jessica
 
-## Technologies
+## Technologies 
 
 ### React
 <https://fr.reactjs.org/>
@@ -20,4 +21,6 @@ Rachel - Raphaël - Jessica
 <https://nodejs.org/en/>
 
 ### MySQL Workbench
-<https://dev.mysql.com/
+
+<https://dev.mysql.com/doc/>
+
