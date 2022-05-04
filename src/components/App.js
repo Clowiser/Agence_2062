@@ -1,4 +1,5 @@
 import '../style/App.css';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -6,10 +7,10 @@ function App() {
       <header className="App-header">
         <p>
         Agence (2062)
-        test branch
         </p>
 
       </header>
+      <Footer />
     </div>
   );
 }
