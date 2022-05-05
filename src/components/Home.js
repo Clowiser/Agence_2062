@@ -1,11 +1,11 @@
 import React from 'react';
-import billg from "../style/img/staff/bill-gates.png"
-import billc from "../style/img/staff/bill-cipher.png"
-import bender from "../style/img/staff/bender.png"
-import buzz from "../style/img/staff/buzz-lightyear.png"
-import rick from "../style/img/staff/rick.png"
-import bob from "../style/img/staff/spongebob.png"
-import fond from "../style/img/background/fond.PNG"
+import billg from "../style/staff/bill-gates.png"
+import billc from "../style/staff/bill-cipher.png"
+import bender from "../style/staff/bender.png"
+import buzz from "../style/staff/buzz-lightyear.png"
+import rick from "../style/staff/rick.png"
+import bob from "../style/staff/spongebob.png"
+import fond from "../style/assets/fond.PNG"
 import '../style/Home.css';
 
 const backgroundImg = {
