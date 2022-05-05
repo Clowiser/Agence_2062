@@ -15,7 +15,7 @@ const backgroundImg = {
 const Home = () =>{
     return(
         <div>
-            <div class="bg-image"
+            <div
                  style={backgroundImg}
             className="bg">
                 <h1>L'espace, votre future adresse</h1>
@@ -23,7 +23,7 @@ const Home = () =>{
 
             <p>L'expertise spatiale de toute notre équipe à votre service !</p>
 
-            <div class="d-flex justify-content-center flex-wrap">
+            <div className="d-flex justify-content-center flex-wrap">
             <img src={billg} alt='Bill Gates'/>
             <img src={billc} alt='Bill Gates'/>
             <img src={bender} alt='Bill Gates'/>

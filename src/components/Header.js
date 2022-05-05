@@ -1,7 +1,6 @@
 import logo from "../style/assets/logo/lgokey.png"
 import React from 'react';
-import hamburgerMenuPage from "./MenuBurger";
-
+import * as boostrap from 'bootstrap';
 
 function Header() {
     return (
@@ -17,16 +16,14 @@ function Header() {
                                 aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
+
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                    <a className="nav-link active" aria-current="page" href="/">Accueil</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Posts</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">Profile</a>
+                                    <a className="nav-link" href="/">Liste Habitats</a>
                                 </li>
                             </ul>
                         </div>
