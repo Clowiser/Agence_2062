@@ -1,15 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/App.css';
+import Home from "./Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-        Agence (2062)
-        test branch
-        </p>
-
-      </header>
+        <Home/>
     </div>
   );
 }
