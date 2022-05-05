@@ -7,7 +7,6 @@ const HousingList = () =>{
         <div>
             <SearchPage/>
             <p>Liste</p>
-            <HousingSingle/>
         </div>
     )
 }
