@@ -24,12 +24,12 @@ const Home = () =>{
             <p>L'expertise spatiale de toute notre équipe à votre service !</p>
 
             <div className="d-flex justify-content-center flex-wrap">
-            <img src={billg} alt='Bill Gates'/>
-            <img src={billc} alt='Bill Gates'/>
-            <img src={bender} alt='Bill Gates'/>
-            <img src={buzz} alt='Bill Gates'/>
-            <img src={rick} alt='Bill Gates'/>
-            <img src={bob} alt='Bill Gates'/>
+                <img src={billg} alt='Bill Gates'/>
+                <img src={billc} alt='Bill Cipher'/>
+                <img src={bender} alt='Bender'/>
+                <img src={buzz} alt='Buzz'/>
+                <img src={rick} alt='Rick'/>
+                <img src={bob} alt='Bob'/>
             </div>
 
             <p>A propos de l'Agence (2062)</p>
