@@ -1,18 +1,10 @@
 import logo from "../style/assets/logo/lgokey.png"
 import React from 'react';
 import * as boostrap from 'bootstrap';
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-} from "react-router-dom";
-import Home from "./Home";
-import HousingList from "./HousingList";
 
 function Header() {
-    return (
 
-        <Router>
+    return (
             <div>
                 <React.Fragment>
                     <nav className="navbar navbar-expand-lg navbar-light bg-light m-4 rounded shadow">
@@ -37,15 +29,8 @@ function Header() {
                             </div>
                         </div>
                     </nav>
-
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/liste" element={<HousingList />} />
-                    </Routes>
-
                 </React.Fragment>
             </div>
-        </Router>
     );
 }
 

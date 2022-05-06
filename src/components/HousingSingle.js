@@ -1,8 +1,14 @@
 import React from 'react';
 
-const HousingSingle = () =>{
+const HousingSingle = (props) =>{
+const { data } = props;
+
+    console.log(data)
+
     return(
-        <p>Détails</p>
+        <>
+            <p>Détails</p>
+        </>
     )
 }
 

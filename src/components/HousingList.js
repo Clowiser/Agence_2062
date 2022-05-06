@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Search from "./Search";
 import axios from "axios";
-import { Card, CardGroup, Col, Image, Row } from 'react-bootstrap';
+import {Card, CardGroup, Col, Image, Row} from 'react-bootstrap';
 import image from "../assets/ciel-etoile550x324.jpg";
+import {NavLink} from "react-router-dom";
+import {Outlet} from "react-router";
 
 const HousingList = () => {
 
@@ -49,13 +51,14 @@ const HousingList = () => {
                                         <p><strong>{element.prix} / mois</strong></p>
                                     </Col>
                                 </Row>
+                                    <NavLink className="nav-link" to={`/liste/${element.idproduit}`} key={element.idproduit}>Habitats Details</NavLink>
                             </Card>
                         </CardGroup>
                         <br/>
                     </div>
                 )
             })}
-
+            <Outlet />
         </div>
     )
 }
