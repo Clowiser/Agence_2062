@@ -1,20 +1,27 @@
 import React from 'react';
 
 
+const Search = (props) =>{
+    const {data, setFiltered} = props;
 
-const Search = () =>{
+    function blockSearch() {
+        let element = document.getElementById("searchbarre").value;
+        let result = [];
+        result = data.filter((data) => {
+            return data.name.toLowerCase().search(element) !== -1;
+        });
+        setFiltered(result);
+    }
+
     return(
-        <form>
+        <>
             <label>
                 Localisation
-                <input type="text" name="localisation" />
+                <input type="text" name="localisation" placeholder="Ecrire en minuscules" id="searchbarre" />
             </label>
-            <label>
-                Budget maximum
-                <input type="text" name="name" />
-            </label>
-            <input type="submit" value="Rechercher" />
-        </form>
+            <input type="submit" value="Rechercher" onClick={blockSearch} />
+        <hr/>
+        </>
     )
 }
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import HousingSingle from "./HousingSingle";
-import SearchPage from "./SearchPage";
+import Search from "./Search";
 import axios from "axios";
 import { Card, CardGroup, Col, Image, Row } from 'react-bootstrap';
 import image from "../assets/ciel-etoile550x324.jpg";
@@ -10,6 +9,8 @@ const HousingList = () => {
     const [data, setData] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false)
+
+    const [filtered, setFiltered] = useState(data);
 
     useEffect(() => {
         setLoading(true)
@@ -27,11 +28,13 @@ const HousingList = () => {
     if (error) return `We are sorry, we can't load information for the moment, try again later!`;
     if (loading) return `Loading, please wait...`;
 
+
     return (
         <div>
-            <SearchPage />
-            <p>Liste</p>
-            {data.map((element) => {
+            <Search data={data} setFiltered={setFiltered} />
+
+            {filtered
+                .map((element) => {
                 return (
                     <div>
                         <CardGroup style={{ backgroundImage: `url(${image}`, backgroundRepeat: "no-repeat", width: '80%', margin: "auto", borderRadius: 10, padding:"5px" }}>
