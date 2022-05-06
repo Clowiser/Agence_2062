@@ -1,7 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import HousingSingle from "./HousingSingle";
 import SearchPage from "./SearchPage";
 import axios from "axios";
+import { Card, CardGroup, Col, Image, Row } from 'react-bootstrap';
+import image from "../assets/ciel-etoile550x324.jpg";
 
 const HousingList = () => {
 
@@ -25,17 +27,31 @@ const HousingList = () => {
     if (error) return `We are sorry, we can't load information for the moment, try again later!`;
     if (loading) return `Loading, please wait...`;
 
-    return(
+    return (
         <div>
-            <SearchPage/>
+            <SearchPage />
             <p>Liste</p>
             {data.map((element) => {
-                return(
+                return (
                     <div>
-                        <h4>{element.name}</h4>
+                        <CardGroup style={{ backgroundImage: `url(${image}`, backgroundRepeat: "no-repeat", width: '80%', margin: "auto", borderRadius: 10, padding:"5px" }}>
+                            <Image src={element.image} alt="habitat1" style={{ width: '90%', margin: "auto", padding: "6px", borderRadius: 10 }}></Image>
+                            <Card style={{ backgroundColor: "#ffffffd6", width: '87%', margin: "auto", fontSize: "16px", padding:"6px" }} >
+                                <p>{element.type}<strong>  {element.nb_piece}pièces {element.superficie} m²</strong></p>
+                                <p style={{}}><strong>{element.name}</strong></p>
+                                <Row xs={2}>
+                                    <Col>
+                                        <p style={{ backgroundColor: "red", width: "70%", borderRadius: 10, color: "white", fontSize: "14px" }} >Exclusivité</p></Col>
+                                        <Col>
+                                        <p><strong>{element.prix} / mois</strong></p>
+                                    </Col>
+                                </Row>
+                            </Card>
+                        </CardGroup>
+                        <br/>
                     </div>
                 )
-            } )}
+            })}
 
         </div>
     )
